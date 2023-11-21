@@ -11,9 +11,9 @@ function main() {
             const themeImg = this.children[0];
             themeImg.setAttribute(
                 "src",
-                themeImg.getAttribute("src") === "./project/assets/images/icon-sun.svg"
-                    ? "./project/assets/images/icon-moon.svg"
-                    : "./project/assets/images/icon-sun.svg"
+                themeImg.getAttribute("src") === "./assets/img/icon-sun.svg"
+                    ? "./assets/img/icon-moon.svg"
+                    : "./assets/img/icon-sun.svg"
             );
         });
 
@@ -145,7 +145,7 @@ function addTodo(todos = JSON.parse(localStorage.getItem("todos"))) {
         button.classList.add("clear");
         // set attributes
         card.setAttribute("draggable", true);
-        img.setAttribute("src", "./project/assets/images/icon-cross.svg");
+        img.setAttribute("src", "./assets/img/icon-cross.svg");
         img.setAttribute("alt", "Clear it");
         cbInput.setAttribute("type", "checkbox");
         // set todo item for card
